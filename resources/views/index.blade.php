@@ -4,7 +4,7 @@
     <div class="container flex flex-col md:flex-row items-center justify-between">
         <div class="md:pr-5 lg:pr-10 md:w-2/5">
             <div class="text-center md:text-left">
-                <h1 class="text-3xl lg:text-5xl text-indigo-darker font-logo font-medium uppercase leading-normal">
+                <h1 class="text-3xl lg:text-5xl text-{{ config('early-access.theme.color') }}-darker font-logo font-medium uppercase leading-normal">
                     @lang('early-access::messages.welcome', ['name' => config('app.name')])
                 </h1>
                 <h4 class="text-base font-light leading-normal grey-soft">
@@ -37,7 +37,7 @@
                                class="p-4 w-full lg:w-3/5 rounded-lg lg:rounded-r-none bg-grey-lighter focus:bg-grey-light focus:outline-none"
                         />
                         <button type="submit"
-                                class="mt-2 lg:mt-0 p-4 lg:px-0 w-full lg:w-2/5 rounded-lg lg:rounded-l-none bg-indigo-dark shadow-lg
+                                class="mt-2 lg:mt-0 p-4 lg:px-0 w-full lg:w-2/5 rounded-lg lg:rounded-l-none bg-{{ config('early-access.theme.color') }}-dark shadow-lg
                                        lg:shadow-none text-sm text-white uppercase focus:outline-none"
                         >
                             @lang('early-access::messages.get_early_access')<sup>&dagger;</sup>

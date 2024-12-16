@@ -14,7 +14,7 @@
     <nav class="container w-full flex justify-between items-center">
         <div class="py-2">
             <a href="{{ route('early-access.index') }}" class="block mt-1 no-underline">
-                <span class="text-5xl font-logo uppercase font-black tracking-tight block text-indigo-dark">
+                <span class="text-5xl font-logo uppercase font-black tracking-tight block text-{{ config('early-access.theme.color') }}-dark">
                     {{ config('app.name') }}
                 </span>
             </a>
@@ -22,7 +22,7 @@
 
         @if ($loginUrl = config('early-access.login_url'))
             <a class="block no-underline" href="{{ $loginUrl }}" title="@lang('early-access::common.login')">
-                <span class="text-sm text-indigo-dark hover:text-indigo-darkest uppercase font-medium">
+                <span class="text-sm text-{{ config('early-access.theme.color') }}-dark hover:text-{{ config('early-access.theme.color') }}-darkest uppercase font-medium">
                     @lang('early-access::common.login')
                 </span>
             </a>
