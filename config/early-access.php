@@ -27,7 +27,12 @@ return [
      */
     'view' => env('EARLY_ACCESS_VIEW', 'early-access::index'),
 
-    /**
+	/**
+	 * The early access enable home visit.
+	 */
+	'enabled_uris' => env('ENABLED_URIS', "/"),
+
+	/**
      * Service driver to use.
      *
      * Supported: database

@@ -45,6 +45,13 @@ class CheckForEarlyAccessMode
                 return $next($request);
             }
 
+			$enableHome = config('early-access.enable_home_visit');
+			$enabledUris = explode(",", config('early-access.enabled_uris'));
+
+			if ($enableHome && in_array($request->getRequestUri(), $enabledUris)) {
+				return $next($request);
+			}
+
             if ($this->inExceptArray($request)) {
                 return $next($request);
             }
