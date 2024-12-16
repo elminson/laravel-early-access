@@ -63,6 +63,7 @@ EARLY_ACCESS_SERVICE_DB_TABLE=subscribers
 EARLY_ACCESS_ENABLED_URIS="/login"
 EARLY_ACCESS_THEME_COLOR=indigo
 EARLY_ACCESS_THEME_TINT_CSS="filter: sepia(1) saturate(10) hue-rotate(-50deg);"
+EARLY_ACCESS_ENABLE_HOME_VISIT=true
 ```
 
 Now migrate the required tables:
