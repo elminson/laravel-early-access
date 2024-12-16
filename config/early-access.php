@@ -74,7 +74,7 @@ return [
 	 *
 	 */
 	'theme' => [
-		'color' => env('THEME_COLOR', 'indigo'),
-		'tint' => env('THEME_TINT_CSS', 'filter: sepia(1) saturate(10) hue-rotate(-50deg);'),
+		'color' => env('EARLY_ACCESS_THEME_COLOR', 'indigo'),
+		'tint' => env('EARLY_ACCESS_THEME_TINT_CSS', 'filter: sepia(1) saturate(10) hue-rotate(-50deg);'),
 	]
 ];
