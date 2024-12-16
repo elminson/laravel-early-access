@@ -30,7 +30,7 @@ return [
 	/**
 	 * The early access enable home visit.
 	 */
-	'enabled_uris' => env('ENABLED_URIS', "/"),
+	'enabled_uris' => env('EARLY_ACCESS_ENABLED_URIS', "/"),
 
 	/**
 	 * Service driver to use.

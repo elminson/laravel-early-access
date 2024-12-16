@@ -60,6 +60,9 @@ EARLY_ACCESS_TWITTER_HANDLE=NeoIghodaro
 EARLY_ACCESS_VIEW="early-access::index"
 EARLY_ACCESS_SERVICE_DRIVER=database
 EARLY_ACCESS_SERVICE_DB_TABLE=subscribers
+EARLY_ACCESS_ENABLED_URIS="/login"
+EARLY_ACCESS_THEME_COLOR=indigo
+EARLY_ACCESS_THEME_TINT_CSS="filter: sepia(1) saturate(10) hue-rotate(-50deg);"
 ```
 
 Now migrate the required tables:
